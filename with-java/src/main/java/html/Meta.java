@@ -1,5 +1,7 @@
 package html;
 
+import lombok.AllArgsConstructor;
+
 /**
  * HTMLの{@code meta}タグを管理するクラス
  *
@@ -7,6 +9,8 @@ package html;
  * @version 1.0
  * @since 1.0
  */
+
+@AllArgsConstructor
 public class Meta {
 
     /**
@@ -48,18 +52,6 @@ public class Meta {
      * noindex, unfollow
      **/
     private final String robots;
-
-    // TODO Q2.2にてこのコンストラクタは削除する
-    public Meta(String lang, String contentType, String charset, String author,
-                String description, FormatDetection formatDetection, String robots) {
-        this.lang = lang;
-        this.contentType = contentType;
-        this.charset = charset;
-        this.author = author;
-        this.description = description;
-        this.formatDetection = formatDetection;
-        this.robots = robots;
-    }
 
     /**
      * metaタグを生成する
