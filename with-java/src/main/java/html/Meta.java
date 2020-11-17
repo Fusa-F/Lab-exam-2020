@@ -1,6 +1,6 @@
 package html;
 
-import lombok.AllArgsConstructor;
+import lombok.Builder;
 
 /**
  * HTMLの{@code meta}タグを管理するクラス
@@ -10,7 +10,7 @@ import lombok.AllArgsConstructor;
  * @since 1.0
  */
 
-@AllArgsConstructor
+@Builder
 public class Meta {
 
     /**
