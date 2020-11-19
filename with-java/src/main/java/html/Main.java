@@ -11,21 +11,11 @@ public class Main {
         System.out.println("NewAddress:" + format.getAddress());
 
         System.out.println("- Q2.2.2");
-        Meta meta = new Meta(
-                "ja",
-                "text/html",
-                "utf-8",
-                null,
-                "This is Exam-Code.",
-                format,
-                "noindex"
-        );
-
         final var metaBd = Meta.builder()
                 .lang("ja")
                 .contentType("text/html")
                 .charset("utf-8")
-                .author(null)
+                .author(null) // フィールドの値がnullであることを許可するか
                 .description("This is Exam-Code.")
                 .formatDetection(format)
                 /* .robots("noindex")/ */ // フィールドの個数増減の許容を調べるためrobotsは除いた
