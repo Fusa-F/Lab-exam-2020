@@ -1,11 +1,10 @@
 package passphrase;
 
 import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
 
 import java.util.Arrays;
 import java.util.List;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 public class PassphraseGeneratorTests {
 
@@ -21,7 +20,7 @@ public class PassphraseGeneratorTests {
 
     @Test
     /* 1024文字のパスワードを10000回生成して、大文字が含まれていないかを検証する */
-    public void generatePassphraseNotContainUppers() {
+    void generatePassphraseNotContainUppers() {
         var pgTest = new PassphraseGeneratorTests();
         // 小文字、数字を使用する
         var generator = new PassphraseGenerator(true, false, true);
@@ -38,7 +37,7 @@ public class PassphraseGeneratorTests {
 
     @Test
     /* 指定した長さのパスワードを生成するかを検証する */
-    public void generatePassphraseBySpecifiedLength() {
+    void generatePassphraseBySpecifiedLength() {
         // 大文字、小文字、数字を使用する
         var generator = new PassphraseGenerator(true, true, true);
 
@@ -51,7 +50,7 @@ public class PassphraseGeneratorTests {
 
     @Test
     /* すべての文字を使用しないとき、空白を生成するかを検証する */
-    public void generateEmptyWhenAllConfigIsFalse() {
+    void generateEmptyWhenAllConfigIsFalse() {
         // すべての文字を使用しない
         var generator = new PassphraseGenerator(false, false, false);
         var passphrase = generator.generate(8);
