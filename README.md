@@ -5,4 +5,4 @@
 - 11/14(Sat)  
     - `with_python` Q1.3
     - `with-java` Q2.1 ~ Q2.2.1
-- 11/17(Tue) `with-java` Q2.2
+- 11/17(Tue) `with-java` Q2.2.2
