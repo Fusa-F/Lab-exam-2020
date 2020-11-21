@@ -6,3 +6,5 @@
     - `with_python` Q1.3
     - `with-java` Q2.1 ~ Q2.2.1
 - 11/17(Tue) `with-java` Q2.2.2
+- 11/20(Fri) `with-java` Q2.3.1
+- 11/21(Sat) `with-java` Q2.3.2
